@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Lint HTML'){
             steps{
-                sh 'tidy -q -e teamplates/*.html'
+                sh 'tidy -q -e templates/*.html'
             }
         }
         stage('Security Scan') {
